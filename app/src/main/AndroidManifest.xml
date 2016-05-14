@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.testapp.hairsimulator">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:requiresSmallestWidthDp="600"
+        android:smallScreens="false"
+        android:xlargeScreens="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".HairSimulatorActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+            android:name=".PictureEditActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".FullScreenActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            >
+        </activity>
+
+        <meta-data
+            android:name="com.crashlytics.ApiKey"
+            android:value="d271b9fba1009e935307c91f6e110859c501caa7" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="d271b9fba1009e935307c91f6e110859c501caa7" />
+    </application>
+
+</manifest>

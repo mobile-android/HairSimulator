@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#9B108E</color>
+    <color name="colorPrimaryDark">#FC98F2</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="ladiesBackgroundColor">#F4CED9</color>
+    <color name="ladiesBrightColor">#9B108E</color>
+
+    <color name="gentsBackgroundColor">#F2B1A0</color>
+    <color name="gentsBrightColor">#34211A</color>
+
+    <color name="notSelectedTextColor">#F4CED9</color>
+
+    <color name="selectedHairStyleTypeBackground">#FFFFFF</color>
+    <color name="unselectedHairStyleTypeBackground">#000000</color>
+
+    <color name="selectedHairStyleTypeTextColor">#000000</color>
+    <color name="unselectedHairStyleTypeTextColor">#FFFFFF</color>
+
+
+</resources>

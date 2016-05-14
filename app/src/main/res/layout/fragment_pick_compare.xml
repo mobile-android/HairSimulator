@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/choosePictureLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:transitionName="testtransition">
+
+    <RelativeLayout
+        android:id="@+id/borderLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border_choose_picture"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/beforeTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/choosePicture"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/choosePicture"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Before"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_alignEnd="@+id/choosePicture"
+            android:layout_alignStart="@+id/choosePicture"
+            android:layout_below="@+id/beforeTV"
+            android:layout_centerHorizontal="true"
+            android:background="#000000" />
+
+        <ImageView
+            android:id="@+id/choosePicture"
+            android:layout_width="match_parent"
+            android:layout_height="204px"
+            android:layout_below="@+id/view"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="1dp"
+            android:scaleType="fitXY" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/addPictureButton"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/second_column_buttons_height"
+        android:layout_alignEnd="@+id/borderLayout"
+        android:layout_alignStart="@+id/borderLayout"
+        android:layout_below="@+id/borderLayout"
+        android:background="#F4CED9"
+        android:text="Add Picture"
+        android:textColor="#9B108E" />
+
+    <Button
+        android:id="@+id/compareImagesLabel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/second_column_buttons_height"
+        android:layout_below="@+id/addPictureButton"
+        android:layout_marginTop="10dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:text="Compare Images"
+        android:textColor="#FFFFFF" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/fullScreenButton"
+        android:layout_below="@+id/compareImagesLabel"
+        android:nestedScrollingEnabled="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/borderCompareImagesItemLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/border_choose_pictures">
+
+
+                <ImageView
+                    android:id="@+id/imageCompareIV1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:id="@+id/chooseImageButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#F4CED9"
+                    android:gravity="center"
+                    android:text="Choose From"
+                    android:textColor="#9B108E"></Button>
+
+                <ImageButton
+                    android:id="@+id/close1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="5dp"
+                    android:src="@drawable/close_icn" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/borderCompareImagesItemLayout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_choose_pictures">
+
+
+                <ImageView
+                    android:id="@+id/imageCompareIV2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:id="@+id/chooseImageButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#F4CED9"
+                    android:gravity="center"
+                    android:text="Choose From"
+                    android:textColor="#9B108E"></Button>
+
+                <ImageButton
+                    android:id="@+id/close2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="5dp"
+                    android:src="@drawable/close_icn" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/borderCompareImagesItemLayout3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/border_choose_pictures">
+
+
+                <ImageView
+                    android:id="@+id/imageCompareIV3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="2dp" />
+
+                <Button
+                    android:id="@+id/chooseImageButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="#F4CED9"
+                    android:gravity="center"
+                    android:text="Choose From"
+                    android:textColor="#9B108E"></Button>
+
+                <ImageButton
+                    android:id="@+id/close3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:padding="5dp"
+                    android:src="@drawable/close_icn" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/fullScreenButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/second_column_buttons_height"
+        android:layout_alignParentBottom="true"
+        android:background="#E6E6E6"
+        android:drawableLeft="@drawable/fullscreen_dis"
+        android:paddingLeft="10dp"
+        android:text="Full Screen" />
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/headerStrip"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_weight="0.1"
+        android:background="#9B108E"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/firstLayoutLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:id="@+id/firstFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></FrameLayout>
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#000000" />
+
+
+        <LinearLayout
+            android:id="@+id/secondLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/secondFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></FrameLayout>
+
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:id="@+id/thirdLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:id="@+id/thirdFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></FrameLayout>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#000000" />
+
+        <LinearLayout
+            android:id="@+id/fourthLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/imageOptionsFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.9">
+
+        <com.edmodo.cropper.CropImageView
+            android:id="@+id/image_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000000"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/image_progress_bar"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center_horizontal|center_vertical" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="72dp"
+        android:layout_weight="0.1"
+        android:background="@drawable/camera_bg">
+
+        <RelativeLayout
+            android:id="@+id/crop_action_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/camera_bg"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/crop_tick" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

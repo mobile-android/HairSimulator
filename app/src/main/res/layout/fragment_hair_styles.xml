@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/firstLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/genderSelector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/femaleButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/maleButtonView"
+                android:layout_alignParentTop="true"
+                android:background="#F4CED9"
+                android:text="Ladies" />
+
+            <View
+                android:id="@+id/femaleButtonView"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#000000" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/maleButton"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="#FFFFFF"
+                android:text="Gents" />
+
+            <View
+                android:id="@+id/maleButtonView"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#FFFFFF" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/recyclerview_grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hairStyleSelector"
+        android:layout_below="@+id/genderSelector"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F4CED9"
+            android:clipToPadding="false" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/hairStyleSelector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/shortTypeButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:text="Short" />
+
+        <Button
+            android:id="@+id/mediumTypeButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:text="Medium" />
+
+        <Button
+            android:id="@+id/largeTypeButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:text="Large" />
+    </LinearLayout>
+
+</RelativeLayout>

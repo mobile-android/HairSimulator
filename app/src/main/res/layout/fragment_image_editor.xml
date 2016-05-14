@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/thirdLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="left"
+            android:padding="5dp"
+            android:text="After"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="2dp"
+            android:src="@drawable/help_icn" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mergeImageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9">
+
+        <ImageView
+            android:id="@+id/ivBackground"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+        <ImageView
+            android:id="@+id/ivSelectedImage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:scaleType="matrix" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/optionsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="0.33"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/photoButton"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F4CED9"
+                android:gravity="center"
+                android:text="Take Photo"
+                android:textAlignment="gravity"
+                android:textColor="#9B108E" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="0.33"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/galleryButton"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F4CED9"
+                android:gravity="center"
+                android:text="Pick from Gallery"
+                android:textAlignment="gravity"
+                android:textColor="#9B108E" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="0.33"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/stylesButton"
+
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F4CED9"
+                android:gravity="center"
+                android:text="Pick from My Styles"
+                android:textAlignment="gravity"
+                android:textColor="#9B108E" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

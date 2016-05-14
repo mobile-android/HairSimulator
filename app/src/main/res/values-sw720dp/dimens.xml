@@ -1,0 +1,7 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="second_column_buttons_height">45dp</dimen>
+    <dimen name="second_column_iv_width">306dp</dimen>
+    <bool name="isTab">true</bool>
+
+</resources>
